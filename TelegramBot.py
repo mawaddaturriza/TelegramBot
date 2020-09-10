@@ -7,7 +7,7 @@ import datetime
 class BotHandler:
     def __init__(self, token):
             self.token = token
-            self.api_url = "https://api.telegram.org/bot{}/".format(token)
+            self.api_url = "https://api.telegram.org/bot1287774876:AAFgp9IIbPyx-hKmnTlyExdOPr_J5mvwiqE/".format(token)
 
     #url = "https://api.telegram.org/bot<token>/"
 
@@ -36,7 +36,7 @@ class BotHandler:
 
 
 token = '1287774876:AAFgp9IIbPyx-hKmnTlyExdOPr_J5mvwiqE' #Token of your bot
-magnito_bot = BotHandler(token) #Your bot's name
+magnito_bot = HoemaeBot(1287774876:AAFgp9IIbPyx-hKmnTlyExdOPr_J5mvwiqE) #Your bot's name
 
 
 
@@ -66,7 +66,7 @@ def main():
                     first_chat_name = "unknown"
 
                 if first_chat_text == 'Hi':
-                    magnito_bot.send_message(first_chat_id, 'Morning ' + first_chat_name)
+                    magnito_bot.send_message(first_chat_id, 'Hello ' + first_chat_name)
                     new_offset = first_update_id + 1
                 else:
                     magnito_bot.send_message(first_chat_id, 'How are you doing '+first_chat_name)
